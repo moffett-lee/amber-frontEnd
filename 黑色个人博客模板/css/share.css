@@ -1,0 +1,14 @@
+ @charset "gb2312";
+.mbbox { overflow: hidden; }
+.mbpic { width: 20%; float: left; margin: 0 22px 30px 0; background-color: #f1f1f1; text-align: center; position: relative; background: #FFF; padding: 15px; border: #CCC 1px solid }
+.effect { max-height: 270px; min-height: 270px; overflow: hidden; }
+.mbimg { border-bottom: 5px solid #333; height: 260px; overflow: hidden; width: 100%; transition: 0.4s; display: inline-block; float: none; vertical-align: middle; }
+.mbimg img { max-width: 100%; margin: auto }
+.mbinfo { font-size: 14px; line-height: 22px; padding: 10px; color: #999; text-align: justify; }
+.mbtitle { background-color: #333; float: left; left: 0; bottom: 0; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; line-height: 40px; height: 40px; width: 100%; transition: 0.4s; position: absolute }
+.mbtitle a { display: inline-block; vertical-align: middle; color: #FFF }
+.effect:hover .mbimg { height: 110px; transition: 0.4s; }
+
+
+
+

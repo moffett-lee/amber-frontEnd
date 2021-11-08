@@ -1,0 +1,89 @@
+@charset "gb2312";
+/*图片特效*/
+.picsbox { float: right; width: 68%; overflow: hidden; background: rgba(255,255,255,0.8); padding-bottom:20px; position:relative}
+.newstitles{font-size: 20px;}
+.piccontext { overflow: hidden; padding:0 20px }
+.piccontext h2 { margin: 20px 0; font-size: 22px; color: #222; }
+.source { height: 20px; line-height: 20px; overflow: hidden; font-size: 14px }
+.source_left { float: left; height: 20px; color: #666666; }
+.source_left a { color: #666666; }
+.source_left a:hover { color: #ff5d11; text-decoration: underline; }
+.source_left span { color: #ababab; padding-right: 15px; }
+.source_right { float: right; height: 20px; color: #666666; }
+.source_right a { color: #666666; }
+.source_right span { padding: 0px 10px; }
+.source_right1 { float: right; height: 20px; color: #666666; display: none; }
+.support { float: left; height: 20px; overflow: hidden; }
+.support img { padding: 0px 5px; }
+
+/*大图展示*/
+.picshow { width: 100%; margin-top: 20px; overflow: hidden; }
+.picshowtop { text-align: center; position: relative; z-index: 1; overflow: hidden; }
+#pic1 { max-width: 100%; margin: auto; }
+#preArrow { left: 0px; }
+#nextArrow { right: 0px; }
+.contextDiv { cursor: pointer; height: 100%; width: 50%; position: absolute; top: 0px; z-index: 5;  }
+.contextDiv span { position: absolute; top: 50%; margin-top: -10%; width: 46px; height: 80px; }
+#preArrow_A { left: 0px; background: url('../images/left.png') 0px 0px no-repeat; display: none; }
+#nextArrow_A { right: 0px; background: url('../images/right.png') 0px 0px no-repeat; display: none; }
+.picshowtxt { min-height: 40px; _height: 40px; }
+.picshowtxt_left { float: left; width: 50px; height: 50px; line-height: 50px; font-family: Georgia, "Times New Roman", Times, serif; }
+.picshowtxt_left span { color: #e55656; font-size: 30px; }
+.picshowtxt_left i { color: #666666; font-size: 20px; }
+.picshowtxt_right { color: #666666; font-size: 14px; padding-top: 14px }
+.picshowlist { width: 100%; padding-bottom: 20px; overflow: hidden; }
+.picshowlist_left { float: left; width: 120px; overflow: hidden; overflow: hidden; }
+.picleftimg { width: 120px; height: 80px;padding-top: 9px; padding-left: 5px; overflow: hidden; }
+.picleftimg img { width: 106px; height: 66px; }
+.piclefttxt { width: 120px; line-height: 20px; }
+.piclefttxt a { color: #444444; }
+.piclefttxt a:hover { color: #ff5d11; text-decoration: underline; }
+.picshowlist_mid { display: inline; overflow: hidden; height: 76px; }
+.picmidleft { float: left; width: 24px; height: 76px; overflow: hidden; }
+.picmidleft a { display: block; width: 24px; height: 76px; }
+.picmidmid { float: left; width: 590px; overflow: hidden; height: 76px; padding-left: 2px; }
+.picmidmid ul { width: 100%; overflow: hidden; position: relative; height: 76px; }
+.picmidmid ul li { float: left; margin-left: 12px; display: inline; width: 106px; text-align: center; overflow: hidden; position: relative; height: 76px; background: #f4f5f6 }
+.picmidmid ul li img { max-width: 90px; height: 76px; margin: auto }
+.selectpic { border: 5px solid #b3d135; height: 66px !important; }
+.picmidright { float: left; width: 24px; height: 76px; overflow: hidden; }
+.picmidright a { display: block; width: 24px; height: 76px; }
+.picshowlist_right { float: left; width: 120px; float: right; overflow: hidden; }
+/*列表展示*/
+.piclistshow { width: 100%; overflow: hidden; border-top: 1px solid #e4e4e4; margin: 10px 0; display: none; }
+.piclistshow ul li { width: 33%; height: 274px; float: left; border-bottom: 1px solid #e4e4e4; overflow: hidden; border-right: 1px solid #e4e4e4; cursor: pointer; padding-top: 40px; }
+.piclistshow ul li:hover { background: #fafafa }
+.piclistshow ul li:nth-child(3n) { border-right: none }
+.piclistshow .picimg { width: 228px; height: 160px; overflow: hidden; display: table-cell; vertical-align: middle; text-align: center; padding: 0px 10px; }
+.picimg img { max-height: 100%; margin: auto; /* width: auto; */ max-width: 100%; }
+.pictxt { padding: 15px 20px 0; line-height: 25px; text-align: center; height: 80px; overflow: hidden; }
+.pictxt h3 { font-size: 14px; font-weight: normal; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3; }
+.gaoqing {  padding-left: 26px; }
+a.gaoqing:hover {  color: #FF702D; text-decoration: underline; }
+/*弹出层*/
+.bodymodal { width: 100%; height: 100%; overflow: hidden; background: #000; filter: alpha(opacity=50); -moz-opacity: 0.5; -khtml-opacity: 0.5; opacity: 0.5; z-index: 1100; position: fixed; top: 0px; left: 0px; display: none; }
+.firsttop_left { width: 300px; height: 250px; margin-right: 30px; overflow: hidden; float: left; }
+.firsttop_right { float: left; overflow: hidden; }
+.close2 { height: 17px; }
+.close2 a {width: 15px; height: 15px; display: block; float: right; }
+.replay { height: 24px; overflow: hidden; }
+.replay h2 { float: left; font-size: 16px; }
+.replay p { float: left; margin-left: 15px; display: inline; line-height: 24px; padding-right: 25px; }
+.replay p a { color: white; font-size: 14px; }
+.replay p a:hover { color: #FF702D; text-decoration: underline; }
+.imgdivtext { position: absolute; bottom: 0px; height: 25px; width: 120px; background: rgba(0, 0, 0, 0.6); line-height: 25px; text-align: center; left: 0px; z-index: 4; *background:#000;
+*filter:alpha(opacity=50);
+}
+.imgdivtext a { color: White; font-size: 14px; font-weight: bold; }
+.imgdivtext a:hover { color: #FF702D; text-decoration: underline; }
+.returnbtn { margin-top: 35px; margin-left: 50px; }
+.returnbtn a { width: 115px; height: 22px; border: 1px solid #ccc; padding: 5px 15px; line-height: 22px; text-align: center; color: White; font-size: 16px; display: block; }
+.returnbtn a:hover { color: #FF702D; text-decoration: underline; border: 1px solid #8d5a00; }
+.firsttop { padding: 20px; background: #1C1C1C; position: absolute; top: 40%; left: 10%; z-index: 1200; color: White; display: none; }
+.endtop { padding: 20px; background: #1C1C1C; position: absolute; top: 40%; left: 10%; z-index: 1200; color: White; display: none; }
+.sleft { display: block; width: 23px; height: 76px; background: #efefef url(../images/left1.jpg) no-repeat center }
+.sright { display: block; width: 23px; height: 76px; background: #efefef url(../images/right1.jpg) no-repeat center }
+.pictext ul{ padding: 20px}
+.diggit {  width: 160px; margin: auto; background: #E2523A; color: #fff; box-shadow: 1px 2px 6px 0px rgba(0,0,0,.2); border-radius: 3px; line-height: 40px; text-align: center; }
+.diggit a { color: #fff; }
+#diggnum { margin: 5px; }

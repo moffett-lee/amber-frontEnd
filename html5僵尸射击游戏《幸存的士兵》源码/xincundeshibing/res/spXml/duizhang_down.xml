@@ -1,0 +1,48 @@
+<skeleton name="队长下半身动作" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="duizhang_down">
+   <b name="tui" x="0.35" y="21.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="zhujue-tui"/>
+   </b>
+   <b name="shenti2" x="-0.5" y="-0.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="zhujue-shenti2"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="duizhang_down">
+   <mov name="daiji" dr="1" to="0">
+    <b name="tui" sc="1" dl="0">
+     <f x="0.35" y="21.35" cocos2d_x="0.35" cocos2d_y="21.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="shenti2" sc="1" dl="0">
+     <f x="-0.5" y="-0.65" cocos2d_x="-0.5" cocos2d_y="-0.65" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+    </b>
+   </mov>
+   <mov name="dead" dr="7" to="0" drTW="69" lp="0" twE="NaN">
+    <b name="tui" sc="1" dl="0">
+     <f x="-2.65" y="5.6" cocos2d_x="0.35" cocos2d_y="21.35" kX="0" kY="0" cX="1" cY="1" pX="-3" pY="-16" z="0" dI="0" dr="1"/>
+     <f x="-2.65" y="5.6" cocos2d_x="4.35" cocos2d_y="20" kX="-15" kY="-15" cX="1" cY="1" pX="-3" pY="-16" z="0" dI="0" dr="1"/>
+     <f x="1.9" y="4.95" cocos2d_x="6.85" cocos2d_y="20.15" kX="-7.51" kY="-7.51" cX="1" cY="1" pX="-3" pY="-16" z="0" dI="0" dr="1"/>
+     <f x="2.95" y="9.35" cocos2d_x="18.8" cocos2d_y="11.7" kX="-70.82" kY="-70.82" cX="1" cY="1" pX="-3" pY="-16" z="0" dI="0" dr="1"/>
+     <f x="8.55" y="19.45" cocos2d_x="22.75" cocos2d_y="11.9" kX="-107.16" kY="-107.16" cX="1" cY="1" pX="-3" pY="-16" z="0" dI="0" dr="1"/>
+     <f x="8.6" y="19.45" cocos2d_x="21.2" cocos2d_y="9.5" kX="-117.16" kY="-117.16" cX="1" cY="1" pX="-3" pY="-16" z="0" dI="0" dr="1"/>
+     <f x="7.3" y="19.2" cocos2d_x="21.5" cocos2d_y="11.65" kX="-107.16" kY="-107.16" cX="1" cY="1" pX="-3" pY="-16" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="shenti2" sc="1" dl="0">
+     <f x="-2.75" y="10.6" cocos2d_x="-0.5" cocos2d_y="-0.65" kX="0" kY="0" cX="1" cY="1" pX="-2" pY="11" z="1" dI="0" dr="1"/>
+     <f x="-2.75" y="10.6" cocos2d_x="-0.5" cocos2d_y="-0.65" kX="0" kY="0" cX="1" cY="1" pX="-2" pY="11" z="1" dI="0" dr="1"/>
+     <f x="3.45" y="9.75" cocos2d_x="1.8" cocos2d_y="-1.65" kX="-19.73" kY="-19.73" cX="1" cY="1" pX="-2" pY="11" z="1" dI="0" dr="1"/>
+     <f x="6" y="13.35" cocos2d_x="0.85" cocos2d_y="3.05" kX="-37.9" kY="-37.9" cX="1" cY="1" pX="-2" pY="11" z="1" dI="0" dr="1"/>
+     <f x="13.6" y="19.75" cocos2d_x="2.5" cocos2d_y="17" kX="-87.19" kY="-87.19" cX="1" cY="1" pX="-2" pY="11" z="1" dI="0" dr="1"/>
+     <f x="13.6" y="19.75" cocos2d_x="2.5" cocos2d_y="17" kX="-87.19" kY="-87.19" cX="1" cY="1" pX="-2" pY="11" z="1" dI="0" dr="1"/>
+     <f x="12.35" y="19.5" cocos2d_x="1.25" cocos2d_y="16.75" kX="-87.19" kY="-87.19" cX="1" cY="1" pX="-2" pY="11" z="1" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="队长下半身动作" width="64" height="64">
+  <SubTexture name="zhujue-shenti2" width="22" height="19" cocos2d_pX="11" cocos2d_pY="9.5" x="0" y="33"/>
+  <SubTexture name="zhujue-tui" width="47" height="31" cocos2d_pX="23.5" cocos2d_pY="15.5" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

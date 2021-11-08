@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>适用于移动端网页上传裁剪图片功能插件</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="css/page-common.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 代码部分begin -->
+<button class="button blue rarrow file-input-mask">上传图片<input type="file" id="file" accept="image/*" capture=camera"/></button>
+<img id="previewResult"/>
+<div class="app" id="uploadPage">
+    <div class="bar"><a class="back pull-left" id="closeCrop"><i class="fa fa-reply"></i></a><a id="getFile" class="pull-right">使用</a></div>
+    <div class="main">
+        <canvas class="upload-mask">
+
+        </canvas>
+        <div class="preview-box">
+            <img id="preview"/>
+        </div>
+        <canvas class="photo-canvas">
+
+        </canvas>
+        <a  id="rotateBtn">
+            <i class="fa fa-rotate-right  fa-3x"></i>
+            <div>旋转照片</div>
+        </a>
+    </div>
+</div>
+</body>
+<script src="js/require.js" ></script>
+<script src="js/main.js"></script>
+<script>
+    var myCrop;
+    require(["jquery",'hammer','tomPlugin',"tomLib",'hammer.fake','hammer.showtouch'],function($,hammer,plugin,T){
+        document.addEventListener("touchmove",function(e){
+            e.preventDefault();
+        })
+        //初始化图片大小300*300
+        var opts={cropWidth:300,cropHeight:300},
+                $file=$("#file"),
+                previewStyle={x:0,y:0,scale:1,rotate:0,ratio:1},
+                transform= T.prefixStyle("transform"),
+                $previewResult=$("#previewResult"),
+                $previewBox=$(".preview-box"),
+                $rotateBtn=$("#rotateBtn"),
+                $getFile=$("#getFile"),
+                $preview=$("#preview"),
+                $uploadPage=$("#uploadPage"),
+                $mask=$(".upload-mask"),
+                maskCtx=$mask[0].getContext("2d");
+
+        //这是插件调用主体
+        myCrop=T.cropImage({
+            bindFile:$file,
+            enableRatio:true,//是否启用高清,高清得到的图片会比较大
+            canvas:$(".photo-canvas")[0],  //放一个canvas对象
+            cropWidth:opts.cropWidth,       //剪切大小
+            cropHeight:opts.cropHeight,
+            bindPreview:$preview,      //绑定一个预览的img标签
+            useHammer:true,            //是否使用hammer手势，否的话将不支持缩放
+            oninit:function(){
+
+            },
+            onLoad:function(data){
+                //用户每次选择图片后执行回调
+                resetUserOpts();
+                previewStyle.ratio=data.ratio;
+                $preview.attr("src",data.originSrc).css({width:data.width,height:data.height}).css(transform,'scale('+1/previewStyle.ratio+')');
+                myCrop.setCropStyle(previewStyle)
+            }
+        });
+        function resetUserOpts(){
+            $(".photo-canvas").hammer('reset');
+            previewStyle={scale:1,x:0,y:0,rotate:0};
+            $previewResult.attr("src",'');
+            $preview.attr("src",'')
+        }
+        $(".photo-canvas").hammer({
+            gestureCb:function(o){
+                //每次缩放拖拽的回调
+                $.extend(previewStyle,o);
+                console.log("用户修改图片",previewStyle)
+                $preview.css(transform,"translate3d("+ previewStyle.x+'px,'+ previewStyle.y+"px,0) rotate("+previewStyle.rotate+"deg) scale("+(previewStyle.scale/previewStyle.ratio)+")")
+            }
+        })
+        //选择图片
+        $rotateBtn.on("click",function(){
+            if(previewStyle.rotate==360){
+                previewStyle.rotate=0;
+            }else{
+                previewStyle.rotate+=90;
+            }
+            myCrop.setCropStyle(previewStyle)
+            $preview.css(transform,"translate3d("+ previewStyle.x+'px,'+ previewStyle.y+"px,0) rotate("+previewStyle.rotate+"deg) scale("+(previewStyle.scale/previewStyle.ratio)+")")
+        })
+        //获取图片并关闭弹窗返回到表单界面
+        $getFile.on("click",function(){
+            var src;
+            $uploadPage.hide();
+            myCrop.setCropStyle(previewStyle)
+            //自定义getCropFile({type:"png",background:"red",lowDpi:true})
+            src=myCrop.getCropFile({});
+            $previewResult.attr("src",src)
+            //you can upload new img file :cheers:)
+            console.info('拿到Base64了,传给后台吧？')//src.substr(22)
+        })
+        //上传文件按钮&&关闭弹窗按钮
+        $(document).delegate("#file","click",function(){
+            $uploadPage.show();
+        }).delegate("#closeCrop","click",function(){
+            $uploadPage.hide();
+            resetUserOpts();
+            myCrop.setCropStyle(previewStyle)
+        })
+        $file.one("click",function(){
+            $uploadPage.show();
+            $mask.prop({width:$mask.width(),height:$mask.height()})
+            maskCtx.fillStyle="rgba(0,0,0,0.7)";
+            maskCtx.fillRect(0,0,$mask.width(),$mask.height());
+            maskCtx.fill();
+            maskCtx.clearRect(($mask.width()-opts.cropWidth)/2,($mask.height()-opts.cropHeight)/2,opts.cropWidth,opts.cropHeight)
+        })
+    })
+</script>
+<!-- 代码部分end -->
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

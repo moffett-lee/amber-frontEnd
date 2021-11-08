@@ -1,0 +1,31 @@
+ @charset "gb2312";
+/* photowall */
+.photowall { width: 100%; overflow: hidden; }
+.photowall img { width: 100%; display: block; opacity: 0.9; -webkit-transition: opacity .5s; transition: opacity .5s; }
+.wall_a { width: 1000px; margin: auto; background: #fafcfa; overflow: hidden }
+.wall_a li { width: 25%; height: 160px; float: left; position: relative; overflow: hidden }
+.wall_a li p a { color: #686868 }
+.wall_a li figcaption, .text_b { display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0; left: 0; transition: all .5s; height: 100%; z-index: 2; padding: 0 20px; }
+.wall_a li h2 { font-size: 15px; line-height: 24px; padding: 20px; font-weight: normal; opacity: 0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -webkit-transform: scale(0); transform: scale(0); color: #666 }
+.wall_a li:hover h2 { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
+.wall_a li:hover img { opacity: 0.4; }
+.abox { background: rgba(255,255,255,.8); overflow: hidden; margin: 20px 0; padding: 20px 50px; }
+.abox h2 { padding: 20px 0 20px 0 }
+#wrap { position: relative; padding: 10px; overflow: hidden; }
+#gradient { width: 100%; height: 35px; background: url() repeat-x; position: absolute; bottom: 0; left: 0; }
+#read-more { padding: 5px; border-top: 4px double #ddd; background: #fff; color: #333; }
+#read-more a { padding-right: 22px; background: url() no-repeat 100% 50%; font-weight: bold; text-decoration: none; }
+#read-more a: hover { color: #000; }
+.biji-content p { margin-bottom: 20px }
+.biji-content span { display: inline }
+.biji-content a { color: #3690cf; display: inline-block; }
+.navlist { margin: 30px 0; width: 100%; overflow: hidden; border-bottom: #e4e3e3 1px solid }
+.navlist li { display: block; font-size: 16px; line-height: 40px; float: left;  width:100px; text-align:center; }
+.navcurrent a { color: #222; display: block; position:relative;}
+.navcurrent a:after{ content:""; background:#3690cf; width:100px; height:4px; position:absolute; bottom:0; left:0}
+.navitem { display: none; min-height: 260px }
+.abox .content { margin-bottom: 20px }
+.abox .content p{ margin-bottom:10px}
+.ab_con { line-height: 30px; }
+.ab_con p { background: #f6f6f6; margin: 5px 0; padding-left: 10px; border-radius: 5px; text-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px; }
+.ab_t { font-size: 16px; font-weight: bold; margin: 10px 0; border-left: #0da919 3px solid; padding-left: 20px }

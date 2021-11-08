@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery漂浮抖动导航菜单代码</title>
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<style type="text/css">
+	body{
+		background: url(./weibo_shuimian-039.jpg) 0 0 no-repeat;
+		background-size: cover;
+	}
+	.main-container{
+		width: 80%;
+		margin:0 auto;
+	}
+	.btn{
+		background:teal;
+		height:40px;
+		width:100px;
+		position:relative;
+		border:0px;
+		border-radius:5px;
+		color:white;
+		-webkit-transform: rotate(0deg);
+	}
+</style>
+</head>
+<body><script src="/demos/googlegg.js"></script>
+<article class="zzsc">
+<br><br><br><br><br><br><br><br>
+	<div class="main-container">
+		<button class="btn" id="b1"  >Home</button>
+		  <button id="b2" class="btn"  >About</button>
+		<button id="b3" class="btn"  >Product</button>
+		<button id="b4" class="btn"  >Demo</button>
+		<button id="b5" class="btn"  >Testimo</button>
+		<button id="b6" class="btn"  >Contact Us</button>
+		<button id="b7" class="btn"  >Carrers</button>
+	</div>
+
+</article>
+
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script  src="js/waterFloat.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var b1 = $('#b1');
+		var b2 = $('#b2');
+		var b3 = $('#b3');
+		var b4 = $('#b4'); 
+		var b5 = $('#b5');
+		var b6 = $('#b6');
+		var b7 = $('#b7');
+		var a1 = $('#a1');
+		var a2 = $('#a2');
+		var p1 = new waterFloat(b1,900,3,8);
+		var p2 = new waterFloat(b2,700,3,8);
+		var p3 = new waterFloat(b3,800,3,10);
+		var p4 = new waterFloat(b4,900,3,8);
+		var p5 = new waterFloat(b5,700,3,8);
+		var p6 = new waterFloat(b6,800,3,10);
+		var p7 = new waterFloat(b7,700,3,8);
+		var p8 = new waterFloat(a1,700,3,8);
+		var p9 = new waterFloat(a2,800,3,10);
+	   });
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+<p>来源：<a href="http://www.lanrenzhijia.com/" target="_blank">懒人素材</a></p>
+</div>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

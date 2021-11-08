@@ -1,0 +1,49 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+*{ margin:0; padding:0; list-style:none;}
+img{ border:none;}
+/*轮播图css */
+.slide_pics{position:relative;padding-top:0px;border:1px solid #CCC;background:#F1F1F1;height:262px;width:748px;margin-bottom:12px;}
+.slide_pics .scrollable {position:relative;overflow:hidden;width:740px;height:256px;margin-top:3px;float:left;border-left:1px solid #CCC;border-right:1px solid #CCC;z-index:600;}
+.slide_pics .scrollable .items {width:20000em;position:absolute;}
+.slide_pics .scrollable .items div {float:left;width:583px;}
+.slide_pics .scrollable .items a {width:583px;height:256px;display:block;position:relative;left:80px;}
+.slide_pics .scrollable img {float:left;margin:0px;background-color:#fff;border:1px solid #ccc;width:581px;height:254px;}
+.slide_pics .navi {margin-left:337px;margin-bottom:7px;width:200px;height:20px;}
+.slide_pics .navi a {width:12px;height:12px;float:left;margin:3px;background:url("../images/navinactive.png") no-repeat; _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/navinactive.png" ,sizingMethod="crop");display:block;font-size:1px;}
+.slide_pics .navi a.active {background:url("../images/navactive.png") no-repeat;
+_background: none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/navactive.png" ,sizingMethod="crop");margin:2px 3px;width:12px;height:12px;}
+_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="slidebtnright.png" ,sizingMethod="crop");clear:right;margin-left:-25px;}
+.slide_pics a.left { margin-right:-25px;}
+.slide_pics .cover {width: 79px;height:255px;background: black;opacity:0.5;filter:alpha(opacity=50);position: relative;z-index: 650;left: 0px;top:0px;float:left;/*cursor:pointer;*/}
+.slide_pics .coverright {left:585px;}
+.slide_pics .topic_des {font-size: 16px;line-height: 16px;position: absolute;top: 0px;left: 0px;color:#fff;text-align: center;top: 258px;width: 100%;font-weight: bold;display: block;}
+
+/*thre*/
+.s-index-org{color:#FF4E00;}
+.s-index-icon,.s-index-star span{display:block;background-image:url(../images/s-index-icon-3.png?ver=201208010);overflow:hidden;text-indent:-1000em;}
+.org-btn-blk{diyaosplay:block;width:60px;height:25px;text-decoration:none;line-height:25px;text-indent:0px;background-position:-73px 0px;text-align:center;color:#fff}
+.org-btn-blk:hover{background-position:-73px -27px;text-decoration:none;}
+.lunbo-recommend{font-size:12px;line-height:1.5em; width:752px; height:265px; margin:0 auto;}
+.lunbo-recommend .slide-pics{;position:relative;float:left;}
+.lunbo-recommend .scrollable{width:666px;height:265px;padding-left:86px;overflow:hidden;position:relative;}
+.lunbo-recommend .slide-pics .cover{width:86px;height:265px;position: absolute;top:0px;background:black;opacity:0.7;filter:alpha(opacity=70);}
+.lunbo-recommend .slide-pics .coverleft{left:0px;}
+.lunbo-recommend .slide-pics .coverright{right:0px;}
+.lunbo-recommend .slide-pics .prev-next{position:absolute;height: 35px;width:28px;top:120px;cursor:pointer;}
+.lunbo-recommend .slide-pics .prev{left:30px;background-position:0px 0px;}
+.lunbo-recommend .slide-pics .next{right:30px;background-position:-35px 0px;}
+.lunbo-recommend .hover.prev{background-position:-0px -36px;}
+.lunbo-recommend .hover.next{background-position:-35px -36px;}
+.lunbo-recommend .slide-pics .hover{background-position-y:-36px;}
+.lunbo-recommend .slide-pics .items{width:30000px;}
+.lunbo-recommend .slide-pics .item{float:left;position:relative;height:265px;overflow:hidden;}
+.lunbo-recommend .slide-pics .item .info-wrapper{position:absolute;height:75px;width:100%;top:266px;}
+.lunbo-recommend .slide-pics .item .info-background{height:75px;background:black;opacity:0.8;filter:alpha(opacity=80);}
+.lunbo-recommend .slide-pics .item .pic-info{position:absolute;top:0px;left:0px;font-size:14px;padding:15px 0px 0px 25px;}
+.lunbo-recommend .slide-pics .item .pic-info h3{color:#fff;height:24px;}
+.lunbo-recommend .slide-pics .item .pic-info p{color:#bebebe;}
+.lunbo-recommend .slide-pics .item .pic-info .orange{color:#ff4e00;}
+.lunbo-recommend .slide-pics .item .pic-info .visite{position:absolute;top:24px;left:490px;font-size:12px;}
+.lunbo-recommend .slide-pics .item a,.lunbo-recommend .slide-pics .item a img{display:block;}
+.lunbo-recommend .slide-pics .item img{width:580px;height:265px;}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

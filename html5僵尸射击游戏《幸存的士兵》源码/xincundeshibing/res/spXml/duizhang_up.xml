@@ -1,0 +1,201 @@
+<skeleton name="队长上半身动作" frameRate="60" version="2.0">
+ <armatures>
+  <armature name="duizhang_up">
+   <b name="shou_L" x="30.35" y="1.35" kX="42.47" kY="42.47" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="zhujue-shou_L"/>
+   </b>
+   <b name="tou1" x="10" y="-29.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="zhujue-tou1"/>
+   </b>
+   <b name="shenti" x="5.85" y="-10.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+    <d name="zhujue-shenti"/>
+   </b>
+   <b name="qiang1" x="19.85" y="-6.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3">
+    <d name="zhujue-qiang1"/>
+   </b>
+   <b name="gebo1_R" x="-13.25" y="-8.9" kX="5.97" kY="5.97" cX="1" cY="1" pX="0" pY="0" z="4">
+    <d name="zhujue-gebo1_R"/>
+   </b>
+   <b name="gebo2_R" x="-14" y="2.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5">
+    <d name="zhujue-gebo2_R"/>
+   </b>
+   <b name="shou_R_1" x="32.95" y="3" kX="42.47" kY="42.47" cX="1" cY="1" pX="0" pY="0" z="6">
+    <d name="zhujue-shou_R_1"/>
+   </b>
+   <b name="shou_R" x="1.5" y="0.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="7">
+    <d name="zhujue-shou_R"/>
+   </b>
+   <b name="jianbang_R" x="-6.65" y="-15.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="8">
+    <d name="zhujue-jianbang_R"/>
+   </b>
+   <b name="tou2" x="9.25" y="-29.65" kX="-1.23" kY="-1.23" cX="1" cY="1" pX="0" pY="0" z="1">
+    <d name="zhujue-tou2"/>
+   </b>
+   <b name="qiangkou1" x="67.35" y="-7.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3">
+    <d name="zhujue-qiangkou1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="duizhang_up">
+   <mov name="daiji" dr="1" to="0">
+    <b name="shou_L" sc="1" dl="0">
+     <f x="30.35" y="1.35" cocos2d_x="30.35" cocos2d_y="1.35" kX="42.47" kY="42.47" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="tou1" sc="1" dl="0">
+     <f x="10" y="-29.15" cocos2d_x="10" cocos2d_y="-29.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+    </b>
+    <b name="shenti" sc="1" dl="0">
+     <f x="5.85" y="-10.15" cocos2d_x="5.85" cocos2d_y="-10.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="1"/>
+    </b>
+    <b name="qiang1" sc="1" dl="0">
+     <f x="19.85" y="-6.4" cocos2d_x="19.85" cocos2d_y="-6.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+    </b>
+    <b name="gebo1_R" sc="1" dl="0">
+     <f x="-13.25" y="-8.9" cocos2d_x="-13.25" cocos2d_y="-8.9" kX="5.97" kY="5.97" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+    </b>
+    <b name="gebo2_R" sc="1" dl="0">
+     <f x="-14" y="2.35" cocos2d_x="-14" cocos2d_y="2.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="0" dr="1"/>
+    </b>
+    <b name="shou_R_1" sc="1" dl="0">
+     <f x="32.95" y="3" cocos2d_x="32.95" cocos2d_y="3" kX="42.47" kY="42.47" cX="1" cY="1" pX="0" pY="0" z="6" dI="0" dr="1"/>
+    </b>
+    <b name="shou_R" sc="1" dl="0">
+     <f x="1.5" y="0.1" cocos2d_x="1.5" cocos2d_y="0.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="7" dI="0" dr="1"/>
+    </b>
+    <b name="jianbang_R" sc="1" dl="0">
+     <f x="-6.65" y="-15.15" cocos2d_x="-6.65" cocos2d_y="-15.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="8" dI="0" dr="1"/>
+    </b>
+   </mov>
+   <mov name="kaiqiang" dr="2" to="0" drTW="11" lp="0" twE="NaN">
+    <b name="shou_L" sc="1" dl="0">
+     <f x="28.85" y="1.35" cocos2d_x="28.85" cocos2d_y="1.35" kX="42.47" kY="42.47" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+     <f x="30.35" y="1.35" cocos2d_x="30.35" cocos2d_y="1.35" kX="42.47" kY="42.47" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="tou2" sc="1" dl="0">
+     <f x="9.25" y="-29.65" cocos2d_x="9.25" cocos2d_y="-29.65" kX="-1.23" kY="-1.23" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+     <f x="10.25" y="-29.4" cocos2d_x="10.25" cocos2d_y="-29.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+    </b>
+    <b name="shenti" sc="1" dl="0">
+     <f x="5.1" y="-10.15" cocos2d_x="5.1" cocos2d_y="-10.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="1"/>
+     <f x="5.85" y="-10.15" cocos2d_x="5.85" cocos2d_y="-10.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="1"/>
+    </b>
+    <b name="qiangkou1" sc="1" dl="0">
+     <f x="67.35" y="-7.9" cocos2d_x="67.35" cocos2d_y="-7.9" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="58.6" y="-7.65" cocos2d_x="68.15" cocos2d_y="-8.15" kX="0" kY="0" cX="0.89" cY="1.08" pX="-11" pY="0" z="3" dI="0" dr="1"/>
+    </b>
+    <b name="qiang1" sc="1" dl="0">
+     <f x="18.35" y="-6.4" cocos2d_x="18.35" cocos2d_y="-6.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+     <f x="19.85" y="-6.4" cocos2d_x="19.85" cocos2d_y="-6.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+    </b>
+    <b name="gebo1_R" sc="1" dl="0">
+     <f x="-8.2" y="-16.95" cocos2d_x="-13.5" cocos2d_y="-8.9" kX="9.93" kY="9.93" cX="1" cY="1" pX="4" pY="-9" z="5" dI="0" dr="1"/>
+     <f x="-8.9" y="-17.3" cocos2d_x="-12.75" cocos2d_y="-8.7" kX="2.75" kY="2.75" cX="1" cY="1" pX="3" pY="-9" z="5" dI="0" dr="1"/>
+    </b>
+    <b name="gebo2_R" sc="1" dl="0">
+     <f x="-15.5" y="2.35" cocos2d_x="-15.5" cocos2d_y="2.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="6" dI="0" dr="1"/>
+     <f x="-14" y="2.35" cocos2d_x="-14" cocos2d_y="2.35" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="6" dI="0" dr="1"/>
+    </b>
+    <b name="shou_R_1" sc="1" dl="0">
+     <f x="31.45" y="3" cocos2d_x="31.45" cocos2d_y="3" kX="42.47" kY="42.47" cX="1" cY="1" pX="0" pY="0" z="7" dI="0" dr="1"/>
+     <f x="32.95" y="3" cocos2d_x="32.95" cocos2d_y="3" kX="42.47" kY="42.47" cX="1" cY="1" pX="0" pY="0" z="7" dI="0" dr="1"/>
+    </b>
+    <b name="shou_R" sc="1" dl="0">
+     <f x="0" y="0.1" cocos2d_x="0" cocos2d_y="0.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="8" dI="0" dr="1"/>
+     <f x="1.5" y="0.1" cocos2d_x="1.5" cocos2d_y="0.1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="8" dI="0" dr="1"/>
+    </b>
+    <b name="jianbang_R" sc="1" dl="0">
+     <f x="-6.9" y="-15.15" cocos2d_x="-6.9" cocos2d_y="-15.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="9" dI="0" dr="1"/>
+     <f x="-6.65" y="-15.15" cocos2d_x="-6.65" cocos2d_y="-15.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="9" dI="0" dr="1"/>
+    </b>
+   </mov>
+   <mov name="dead" dr="7" to="0" drTW="69" lp="0" twE="NaN">
+    <b name="shou_L" sc="1" dl="0">
+     <f x="26.55" y="2.6" cocos2d_x="30.35" cocos2d_y="1.35" kX="42.47" kY="42.47" cX="1" cY="1" pX="-2" pY="3" z="0" dI="0" dr="1"/>
+     <f x="22.65" y="5.7" cocos2d_x="26.5" cocos2d_y="6.6" kX="74.13" kY="74.13" cX="1" cY="1" pX="-2" pY="3" z="0" dI="0" dr="1"/>
+     <f x="26.2" y="-12.65" cocos2d_x="28.85" cocos2d_y="-15.65" kX="12.95" kY="12.95" cX="1" cY="1" pX="-2" pY="4" z="0" dI="0" dr="1"/>
+     <f x="17.85" y="-14.2" cocos2d_x="18.05" cocos2d_y="-18.2" kX="-26.03" kY="-26.03" cX="1" cY="1" pX="-2" pY="4" z="0" dI="0" dr="1"/>
+     <f x="5.15" y="-8.4" cocos2d_x="3" cocos2d_y="-11.85" kX="-60.99" kY="-60.99" cX="1" cY="1" pX="-2" pY="4" z="0" dI="0" dr="1"/>
+     <f x="11.95" y="-3.85" cocos2d_x="10.1" cocos2d_y="-7.5" kX="-56.26" kY="-56.26" cX="1" cY="1" pX="-2" pY="4" z="0" dI="0" dr="1"/>
+     <f x="8.9" y="-3.15" cocos2d_x="6.75" cocos2d_y="-6.6" kX="-60.99" kY="-60.99" cX="1" cY="1" pX="-2" pY="4" z="0" dI="0" dr="1"/>
+    </b>
+    <b name="tou1" sc="1" dl="0">
+     <f x="11.25" y="-25.15" cocos2d_x="10" cocos2d_y="-29.15" kX="0" kY="0" cX="1" cY="1" pX="1" pY="4" z="1" dI="0" dr="1"/>
+     <f x="17.55" y="-24.7" cocos2d_x="18.25" cocos2d_y="-28.75" kX="26.48" kY="26.48" cX="1" cY="1" pX="1" pY="4" z="1" dI="0" dr="1"/>
+     <f x="-0.6" y="-30" cocos2d_x="-4.35" cocos2d_y="-32" kX="-44.52" kY="-44.52" cX="1" cY="1" pX="1" pY="4" z="1" dI="0" dr="1"/>
+     <f x="-13.85" y="-18.05" cocos2d_x="-18.05" cocos2d_y="-18.2" kX="-70.51" kY="-70.51" cX="1" cY="1" pX="1" pY="4" z="1" dI="0" dr="1"/>
+     <f x="-19.55" y="6.05" cocos2d_x="-23.7" cocos2d_y="6.5" kX="-79.24" kY="-79.24" cX="1" cY="1" pX="1" pY="4" z="1" dI="0" dr="1"/>
+     <f x="-16.55" y="1.95" cocos2d_x="-20.4" cocos2d_y="3.55" kX="-97.52" kY="-97.52" cX="1" cY="1" pX="1" pY="4" z="1" dI="0" dr="1"/>
+     <f x="-19.05" y="4.55" cocos2d_x="-23.2" cocos2d_y="5.1" kX="-80.46" kY="-80.46" cX="1" cY="1" pX="1" pY="4" z="1" dI="0" dr="1"/>
+    </b>
+    <b name="shenti" sc="1" dl="0">
+     <f x="6.35" y="-21.65" cocos2d_x="5.85" cocos2d_y="-10.15" kX="0" kY="0" cX="1" cY="1" pX="1" pY="-11" z="2" dI="0" dr="1"/>
+     <f x="12" y="-24.15" cocos2d_x="7.65" cocos2d_y="-13.4" kX="20.19" kY="20.19" cX="1" cY="1" pX="0" pY="-12" z="2" dI="0" dr="1"/>
+     <f x="-3.2" y="-24.05" cocos2d_x="1.95" cocos2d_y="-13.7" kX="-29.04" kY="-29.04" cX="1" cY="1" pX="1" pY="-12" z="2" dI="0" dr="1"/>
+     <f x="-13.6" y="-11.55" cocos2d_x="-4.4" cocos2d_y="-4.5" kX="-55.03" kY="-55.03" cX="1" cY="1" pX="0" pY="-12" z="2" dI="0" dr="1"/>
+     <f x="-19.1" y="11.75" cocos2d_x="-7.5" cocos2d_y="12.25" kX="-89.99" kY="-89.99" cX="1" cY="1" pX="1" pY="-12" z="2" dI="0" dr="1"/>
+     <f x="-16.35" y="6.6" cocos2d_x="-5.6" cocos2d_y="11.1" kX="-69.54" kY="-69.54" cX="1" cY="1" pX="0" pY="-12" z="2" dI="0" dr="1"/>
+     <f x="-16.85" y="9" cocos2d_x="-5.7" cocos2d_y="12.25" kX="-76.26" kY="-76.26" cX="1" cY="1" pX="1" pY="-12" z="2" dI="0" dr="1"/>
+    </b>
+    <b name="qiang1" sc="1" dl="0">
+     <f x="19.85" y="-6.4" cocos2d_x="19.85" cocos2d_y="-6.4" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="20.45" y="-0.65" cocos2d_x="20.45" cocos2d_y="-0.65" kX="-32.01" kY="-32.01" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="20.9" y="14.9" cocos2d_x="20.9" cocos2d_y="14.9" kX="-28.26" kY="-28.26" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="24.35" y="24.4" cocos2d_x="24.35" cocos2d_y="24.4" kX="-4.31" kY="-4.31" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="24.2" y="20.4" cocos2d_x="24.2" cocos2d_y="20.4" kX="13.19" kY="13.19" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="24.85" y="20.5" cocos2d_x="24.85" cocos2d_y="20.5" kX="14.6" kY="14.6" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+     <f x="24.85" y="20.5" cocos2d_x="24.85" cocos2d_y="20.5" kX="11.89" kY="11.89" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+    </b>
+    <b name="gebo1_R" sc="1" dl="0">
+     <f x="-13.25" y="-8.9" cocos2d_x="-13.25" cocos2d_y="-8.9" kX="5.97" kY="5.97" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+     <f x="-10.75" y="-18.85" cocos2d_x="-10.75" cocos2d_y="-18.85" kX="26.17" kY="26.17" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+     <f x="-12.4" y="-11.85" cocos2d_x="-10.55" cocos2d_y="-3.35" kX="-47.02" kY="-47.02" cX="1" cY="1" pX="5" pY="-7" z="4" dI="0" dr="1"/>
+     <f x="-16.9" y="3.7" cocos2d_x="-9.7" cocos2d_y="8.5" kX="-90.74" kY="-90.74" cX="1" cY="1" pX="5" pY="-7" z="4" dI="0" dr="1"/>
+     <f x="-13.05" y="26.15" cocos2d_x="-4.4" cocos2d_y="25.9" kX="-125.7" kY="-125.7" cX="1" cY="1" pX="5" pY="-7" z="4" dI="0" dr="1"/>
+     <f x="-14.45" y="20.6" cocos2d_x="-6.05" cocos2d_y="22.7" kX="-110.24" kY="-110.24" cX="1" cY="1" pX="5" pY="-7" z="4" dI="0" dr="1"/>
+     <f x="-15.35" y="24.15" cocos2d_x="-6.95" cocos2d_y="26.25" kX="-110.01" kY="-110.01" cX="1" cY="1" pX="5" pY="-7" z="4" dI="0" dr="1"/>
+    </b>
+    <b name="gebo2_R" sc="1" dl="0">
+     <f x="-19" y="2.1" cocos2d_x="-14" cocos2d_y="2.35" kX="0" kY="0" cX="1" cY="1" pX="-5" pY="0" z="5" dI="0" dr="1"/>
+     <f x="-20.2" y="-11.15" cocos2d_x="-17.6" cocos2d_y="-6.95" kX="55.35" kY="55.35" cX="1" cY="1" pX="-5" pY="0" z="5" dI="0" dr="1"/>
+     <f x="-6.7" y="7.65" cocos2d_x="-1.7" cocos2d_y="7.75" kX="-2.12" kY="-2.12" cX="1" cY="1" pX="-5" pY="0" z="5" dI="0" dr="1"/>
+     <f x="0.7" y="13.8" cocos2d_x="5.4" cocos2d_y="12.25" kX="-21.16" kY="-21.16" cX="1" cY="1" pX="-5" pY="0" z="5" dI="0" dr="1"/>
+     <f x="5.6" y="23.15" cocos2d_x="8.1" cocos2d_y="18.85" kX="-62.59" kY="-62.59" cX="1" cY="1" pX="-5" pY="0" z="5" dI="0" dr="1"/>
+     <f x="7.95" y="25.05" cocos2d_x="12.9" cocos2d_y="24.45" kX="-9.42" kY="-9.42" cX="1" cY="1" pX="-5" pY="0" z="5" dI="0" dr="1"/>
+     <f x="8.4" y="27.55" cocos2d_x="13.25" cocos2d_y="26.9" kX="-10.36" kY="-10.36" cX="1" cY="1" pX="-5" pY="0" z="5" dI="0" dr="1"/>
+    </b>
+    <b name="shou_R" sc="1" dl="0">
+     <f x="-5" y="1.85" cocos2d_x="1.5" cocos2d_y="0.1" kX="0" kY="0" cX="1" cY="1" pX="-6" pY="2" z="6" dI="0" dr="1"/>
+     <f x="-12.1" y="0.3" cocos2d_x="-5.9" cocos2d_y="2.9" kX="38.13" kY="38.13" cX="1" cY="1" pX="-6" pY="2" z="6" dI="0" dr="1"/>
+     <f x="7.25" y="7" cocos2d_x="12.8" cocos2d_y="3.15" kX="-19.34" kY="-19.34" cX="1" cY="1" pX="-6" pY="2" z="6" dI="0" dr="1"/>
+     <f x="13.6" y="8.6" cocos2d_x="17.7" cocos2d_y="3.2" kX="-38.38" kY="-38.38" cX="1" cY="1" pX="-7" pY="2" z="6" dI="0" dr="1"/>
+     <f x="11.8" y="10.65" cocos2d_x="11.3" cocos2d_y="3.95" kX="-79.81" kY="-79.81" cX="1" cY="1" pX="-6" pY="2" z="6" dI="0" dr="1"/>
+     <f x="21" y="23.85" cocos2d_x="27.7" cocos2d_y="23.65" kX="13.31" kY="13.31" cX="1" cY="1" pX="-6" pY="2" z="6" dI="0" dr="1"/>
+     <f x="21.95" y="24.9" cocos2d_x="28.15" cocos2d_y="22.25" kX="-7.88" kY="-7.88" cX="1" cY="1" pX="-6" pY="2" z="6" dI="0" dr="1"/>
+    </b>
+    <b name="jianbang_R" sc="1" dl="0">
+     <f x="-6.4" y="-15.9" cocos2d_x="-6.65" cocos2d_y="-15.15" kX="0" kY="0" cX="1" cY="1" pX="0" pY="-1" z="7" dI="0" dr="1"/>
+     <f x="-1.9" y="-23.1" cocos2d_x="-2.4" cocos2d_y="-22.5" kX="20.19" kY="20.19" cX="1" cY="1" pX="0" pY="-1" z="7" dI="0" dr="1"/>
+     <f x="-11.55" y="-12.85" cocos2d_x="-11.45" cocos2d_y="-12.05" kX="-29.04" kY="-29.04" cX="1" cY="1" pX="0" pY="-1" z="7" dI="0" dr="1"/>
+     <f x="-16.2" y="2.15" cocos2d_x="-15.75" cocos2d_y="2.8" kX="-55.03" kY="-55.03" cX="1" cY="1" pX="0" pY="-1" z="7" dI="0" dr="1"/>
+     <f x="-13.4" y="24.45" cocos2d_x="-12.65" cocos2d_y="24.75" kX="-89.99" kY="-89.99" cX="1" cY="1" pX="0" pY="-1" z="7" dI="0" dr="1"/>
+     <f x="-14.25" y="20.4" cocos2d_x="-13.55" cocos2d_y="20.75" kX="-85.26" kY="-85.26" cX="1" cY="1" pX="0" pY="-1" z="7" dI="0" dr="1"/>
+     <f x="-15.15" y="24.45" cocos2d_x="-14.4" cocos2d_y="24.75" kX="-89.99" kY="-89.99" cX="1" cY="1" pX="0" pY="-1" z="7" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="队长上半身动作" width="128" height="128">
+  <SubTexture name="zhujue-qiangkou1" width="27" height="19" cocos2d_pX="13.5" cocos2d_pY="9.5" x="47" y="29"/>
+  <SubTexture name="zhujue-tou2" width="22" height="25" cocos2d_pX="11" cocos2d_pY="12.5" x="88" y="26"/>
+  <SubTexture name="zhujue-jianbang_R" width="20" height="18" cocos2d_pX="10" cocos2d_pY="9" x="70" y="53"/>
+  <SubTexture name="zhujue-shou_R" width="18" height="14" cocos2d_pX="9" cocos2d_pY="7" x="92" y="68"/>
+  <SubTexture name="zhujue-shou_R_1" width="7" height="15" cocos2d_pX="3.5" cocos2d_pY="7.5" x="113" y="18"/>
+  <SubTexture name="zhujue-gebo2_R" width="24" height="13" cocos2d_pX="12" cocos2d_pY="6.5" x="92" y="53"/>
+  <SubTexture name="zhujue-gebo1_R" width="23" height="24" cocos2d_pX="11.5" cocos2d_pY="12" x="88" y="0"/>
+  <SubTexture name="zhujue-qiang1" width="86" height="27" cocos2d_pX="43" cocos2d_pY="13.5" x="0" y="0"/>
+  <SubTexture name="zhujue-shenti" width="45" height="40" cocos2d_pX="22.5" cocos2d_pY="20" x="0" y="29"/>
+  <SubTexture name="zhujue-tou1" width="21" height="25" cocos2d_pX="10.5" cocos2d_pY="12.5" x="47" y="50"/>
+  <SubTexture name="zhujue-shou_L" width="13" height="16" cocos2d_pX="6.5" cocos2d_pY="8" x="113" y="0"/>
+ </TextureAtlas>
+</skeleton>

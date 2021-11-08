@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>懒人原创淡绿色支持微信页面右侧悬浮在线客服代码</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+.lanren{ position:absolute; right:0; top:150px;}
+.lanren .slide_min{ width:28px; height:112px; background:url(http://demo.lanrenzhijia.com/2014/service1205/images/slide_min.jpg) no-repeat; cursor:pointer;}
+.lanren .slide_box{ width:154px; height:auto; overflow:hidden; background:url(http://demo.lanrenzhijia.com/2014/service1205/images/slide_box_bg.jpg) repeat-y; font-size:12px; text-align:center; line-height:130%; color:#666; border-bottom:2px solid #76A20D;}
+.lanren .slide_box .weixin{ margin-bottom:5px;}
+.lanren .slide_box img{ cursor:pointer;}
+.lanren .slide_box p{ text-align:center; padding:5px; margin:5px;border-bottom:1px solid #ddd;}
+.lanren .slide_box span{ padding:5px 10px; display:block;}
+.lanren .slide_box span a{ color:#76A20C;}
+</style>
+</head>
+<body style="height:3000px;">
+<!-- 代码部分begin -->
+<div class="lanren">
+	<div class="slide_min"></div>
+    <div class="slide_box" style="display:none;">
+    	<h2><img src="http://demo.lanrenzhijia.com/2014/service1205/images/slide_box.jpg" /></h2>
+        <p><a title="点击这里给我发消息" href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456789&amp;site=www.cactussoft.cn&amp;menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=2:123456789:41"></a></p>
+        <p>
+        	<img src="http://demo.lanrenzhijia.com/2014/service1205/images/weixin.jpg" class="weixin" /><br />
+        	<b>客户服务热线</b><br />
+        	130-0000-0000
+        </p>
+        <span><a href="#">给我们留言</a></span>
+    </div>
+</div>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+$(function(){
+	var thisBox = $('.lanren');
+	var defaultTop = thisBox.offset().top;
+	var slide_min = $('.lanren .slide_min');
+	var slide_box = $('.lanren .slide_box');
+	var closed = $('.lanren .slide_box h2 img');
+	slide_min.on('click',function(){$(this).hide();	slide_box.show();});
+	closed.on('click',function(){slide_box.hide().hide();slide_min.show();});
+	// 页面滚动的同时，悬浮框也跟着滚动
+	$(window).on('scroll',function(){scro();});
+	$(window).onload = scro();
+	function scro(){
+		var offsetTop = defaultTop + $(window).scrollTop()+'px';
+		thisBox.animate({top:offsetTop},
+		{	duration: 600,	//滑动速度
+	     	queue: false    //此动画将不进入动画队列
+	     });
+	}
+});
+</script>
+<!-- 代码部分end -->
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

@@ -1,0 +1,39 @@
+ @charset "gb2312";
+.infos { width: 100%; background: #FFF; overflow: hidden; margin-top: 20px }
+
+.newsview { padding: 20px }
+.intitle { line-height: 40px; height: 40px; font-size: 14px; ; border-bottom: #000 2px solid; }
+.intitle a { font-weight: normal; }
+.news_title { font-size: 24px; font-weight: normal; padding: 20px 0; color: #333; }
+.news_author { width: 100%; color: #999; line-height: 18px; }
+.news_author span { margin-right: 10px; padding-left: 20px }
+.au01 { background: url(../images/author2.png) no-repeat left center }
+.au02 { background: url(../images/date.png) no-repeat left center }
+.au03 b { color: #333; padding: 0 5px }
+.au04 { font-weight: normal; }
+.news_about { color: #888888; border: 1px solid #F3F3F3; padding: 10px; margin: 20px auto 15px auto; line-height: 23px; background: none repeat 0 0 #F6F6F6; }
+.news_about strong { color: #38485A; font-weight: 400 !important; font-size: 13px; padding-right: 8px; }
+.news_content { line-height: 24px; font-size: 14px; }
+.news_content p { overflow: hidden; padding-bottom: 4px; padding-top: 6px; word-wrap: break-word; }
+.tags a { background: #F4650E; padding: 3px 8px; margin: 0 5px 0 0; color: #fff; }
+.tags { margin: 10px 0; }
+.news_infos { line-height: 24px ;    text-align: justify;}
+.news_infos p { margin-bottom: 10px }
+.news_infos img { max-width: 650px }
+.share { padding: 20px; }
+.nextinfo { line-height: 24px; width: 100%; background: #FFF;  overflow: hidden; }
+.nextinfo p { padding: 4px 10px; border-radius: 5px; }
+.nextinfo a{ color: #000;}
+.nextinfo a:hover { text-decoration: underline }
+
+.otherlink, .xzsm, .ffsm { width: 100%; background: #FFF; overflow: hidden;  }
+.otherlink h2 { border-bottom: #000 2px solid; line-height: 40px; font-size: 14px; background: url(../images/5794.png) left 10px center no-repeat; padding-left: 40px; color: #000 }
+.otherlink ul { margin: 10px 0; overflow:hidden; padding:0 20px }
+.otherlink li { line-height: 24px; height: 24px; display: block; width: 40%; float:left; overflow: hidden; padding-left: 10px; background:url(../images/navline.jpg) no-repeat left center }
+.otherlink li a:hover { text-decoration: underline; color: #000 }
+
+.news_pl { margin: 10px 0; width: 100%; background: #FFF; overflow: hidden; margin: 20px 0 }
+.news_pl h2 { background: url(../images/newsbg03.png) no-repeat left 10px center; border-bottom: #000 2px solid; line-height: 40px; font-size: 14px; padding-left: 30px; color: #000 }
+.xzsm ul, .ffsm ul { padding: 20px; line-height: 24px; border-top: 6px solid #a6b5c5; }
+.bt-blue { display: block; line-height: 40px; height: 40px; background: #1e8ec5; width: 100px; text-align: center; }
+.bt-blue a { color: #fff }

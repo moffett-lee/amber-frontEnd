@@ -1,0 +1,19 @@
+@charset "gb2312";
+.link_box { border-top: #dedede 1px solid; padding: 20px 0; overflow: hidden; background: rgba(255,255,255,0.8);  }
+h2.ctitle { line-height: 30px; font-size: 16px; }
+.ctitle b {border-left:#333 5px solid; width: 120px; display: block; text-align: center; color: #333; line-height: 40px; height: 40px;  }
+.blogsitetj li:nth-child(n) { background: #FE5187; }
+ul.blogsitetj, ul.blogsite { padding: 30px; overflow: hidden; }
+.blogsitetj li { float: left; width: 24%; text-align: center; line-height: 30px; background: #075498; padding: 5px 0; overflow: hidden; height: 30px; border: 1px solid #fff; }
+.blogsitetj li:nth-child(n) { background: #FE5187 }
+.blogsitetj li:nth-child(2n) { background: #339967 }
+.blogsitetj li:nth-child(3n) { background: #FF8151 }
+.blogsitetj li:nth-child(4n) { background: #3594cb }
+.blogsitetj li:nth-child(5n) { background: #66CC9A }
+.blogsitetj li:nth-child(6n) { background: #079798 }
+.blogsitetj li a { color: #fff }
+.blogsitetj li:hover { background: #055f5f }
+.blogsite li { float: left; width: 200px; text-align: center; line-height: 30px; background: #f3f3f3; padding: 5px 0; overflow: hidden; height: 30px; border: 1px solid #fff; position: relative }
+.blogsite li:before, .blogsite li:after { content: ''; position: absolute; top: 0; right: 0; height: 2px; width: 0; background: #333; transition: 400ms ease all; }
+.blogsite li:after { right: inherit; top: inherit; left: 0; bottom: 0; }
+.blogsite li:hover:before, .blogsite li:hover:after { width: 100%; transition: 800ms ease all; }

@@ -1,0 +1,13 @@
+ @charset "gb2312";
+.timebox { background: #FFF; padding: 30px }
+.timebox span { position: relative; line-height: 32px; padding-right: 40px; color: #999 }
+.timebox span:after { position: absolute; content: ""; width: 2px; height: 40px; background: #e0dfdf; right: 18px }
+.timebox li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.timebox li i { position: relative; font-style: normal }
+.timebox li i:before { content: " "; height: 10px; width: 10px; border: 2px solid #cccaca; background: #fff; position: absolute; top: 4px; left: -26px; border-radius: 50%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; }
+.timebox li:hover i:before { background: #3690cf }
+.pagelist { text-align: center; color: #666; width: 100%; clear: both; margin: 25px 0; padding-top: 20px }
+.pagelist a { color: #666; margin: 0 2px; border: 1px solid #fff; padding: 5px 10px; background: #FFF; display: inline-block; margin-bottom: 10px; }
+.pagelist a:hover { color: #3690cf; }
+.pagelist > b { border: 1px solid #3690cf; padding: 5px 10px; background: #3690cf; color: #FFF }
+a.curPage { color: #19585d; font-weight: bold; }

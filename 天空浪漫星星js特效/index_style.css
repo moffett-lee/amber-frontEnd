@@ -1,0 +1,94 @@
+
+body {margin:0 auto;overflow:hidden;}
+
+/*=============第一页=============*/
+.header{
+	margin:0 auto;
+	width:100%;
+	height:640px;
+	background-color:#000;
+	position:relative;
+	}
+.header canvas {
+	width:100%;height:auto/*默认全屏显示 可自己设置高度640px*/;
+	display:inline-block;vertical-align:baseline
+	position:absolute;
+	z-index:-1;
+	}
+.header .canvaszz{  /*用来解决视频右键菜单，用于视频上面的遮罩层*/
+	width:100%;
+	background-image: url(toumx.png);
+	background-repeat: none;
+	height:640px;
+	position:absolute;
+	z-index:10;
+		filter:alpha(opacity=40);
+      	-moz-opacity:0.4;
+      	-khtml-opacity: 0.4;
+      	opacity: 0.4;
+	}
+
+.audio{
+/*设置音乐显示位置*/
+	width:45px;
+	position:fixed;top:65px;left:94%;
+	z-index:100;
+	filter:alpha(opacity=30);
+      -moz-opacity:0.3;
+      -khtml-opacity: 0.3;
+      opacity: 0.3;
+	}
+.header .top_logo{
+	background-image: url();
+	margin:0 auto;
+	width:350px;
+	height:350px;
+	position:absolute;
+	z-index:30;
+	top:10px;
+	left: 52%;
+	margin-left: -390px;
+	}
+
+.header .nav{
+	width:804px;
+	height:auto;
+	position:absolute;
+	z-index:30;
+	top:420px;
+	left: 50%;
+	margin-left: -400px;
+	}
+.header .nav a.gv {
+	text-decoration:none;
+	background:url(img/nav_gv.png) repeat 0px 0px;
+	width: 130px;
+	height: 43px;
+	display: block;
+	text-align:center;		/*水平居中*/
+	line-height:43px;  /*上下居中*/
+	cursor:pointer;
+	float:left;/*左浮动*/
+	margin:8px 2px 8px 2px;
+	font:20px/43px 'microsoft yahei'; color:#066197;
+	}
+.header .nav a.gv span {
+	 display: none;
+
+}
+.header .nav a.gv:hover {
+	background: url(img/nav_gv.png) repeat 0px -43px;
+	color:#1d7eb8;
+	-webkit-box-shadow: 0 0 6px #1d7eb8;
+	transition-duration: 0.5s;
+	}
+
+.header	.topcn{
+	width: 980px;
+	top:200px;
+	left: 50%;
+	margin-left: -490px;
+	position:absolute;
+	z-index:20;
+
+	}

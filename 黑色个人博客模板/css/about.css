@@ -1,0 +1,14 @@
+@charset "gb2312";
+.ab_box{ border-top:#dedede 1px solid; padding:20px 0; overflow:hidden;background:rgba(255,255,255,0.8)}
+.leftbox { width: 70%; float: left; overflow: hidden;  }
+.rightbox { width: 28%; float: right; overflow: hidden; margin-right:20px }
+.aboutme { overflow: hidden;    background:#fff; }
+.ab_con { line-height: 30px; padding: 10px; }
+.ab_con p { background: #f6f6f6; margin: 5px 0; padding-left: 10px; border-radius: 5px; text-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px; }
+.avatar { width: 100px; height: 100px; overflow: hidden; border-radius: 50px; margin: 10px auto 0; }
+.avatar img { width: 100px; height: 100px }
+.newsview{ padding:20px}
+.news_infos {line-height: 24px;text-align: justify;}
+.meandblog {  padding: 20px; border-radius: 10px; overflow: hidden; margin: 0 0 20px 0; }
+.meandblog li { background: #f1f1f1; line-height: 30px; margin: 5px 0; padding: 0 0 0 10px; border-radius: 10px; border-top: 2px solid #e2e2e2; text-shadow: #eae7e7 0px 0px 1px; }
+.meandblog li a:hover { color: #000 }

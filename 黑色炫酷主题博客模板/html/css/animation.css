@@ -1,0 +1,163 @@
+@charset "gb2312";
+/* Animation */
+
+ @-webkit-keyframes pageTop { 0% {
+opacity: 0;
+-webkit-transform: perspective(400px) rotateX(90deg);
+}
+ 100% {
+opacity: 1;
+-webkit-transform: perspective(400px) rotateX(0deg);
+}
+}
+ @-moz-keyframes pageTop { 0% {
+opacity: 0;
+-moz-transform: perspective(400px) rotateX(90deg);
+}
+ 100% {
+opacity: 1;
+-moz-transform: perspective(400px) rotateX(0deg);
+}
+}
+ @-o-keyframes pageTop { 0% {
+opacity: 0;
+-o-transform: perspective(400px) rotateX(90deg);
+}
+ 100% {
+opacity: 1;
+-o-transform: perspective(400px) rotateX(0deg);
+}
+}
+ @keyframes pageTop { 0% {
+opacity: 0;
+transform: perspective(400px) rotateX(90deg);
+}
+ 100% {
+opacity: 1;
+transform: perspective(400px) rotateX(0deg);
+}
+}
+@keyframes starwars { 0% {
+opacity: 0;
+transform: perspective(200px) scale(3) translateY(180px) rotateX(80deg);
+}
+ 80% {
+opacity: 1;
+transform: perspective(200px) scale(1) rotateX(60deg)
+}
+ 100% {
+opacity: 1;
+transform: perspective(200px) scale(1) rotateX(0deg)
+}
+}
+
+@-webkit-keyframes animations2 {  0% {
+opacity:0;
+}
+ 40% {
+opacity:.8;
+}
+ 45% {
+opacity:.3;
+}
+ 50% {
+opacity:.8;
+}
+ 55% {
+opacity:.3;
+}
+ 60% {
+opacity:.8;
+}
+ 100% {
+opacity:0;
+}
+}
+@-moz-keyframes animations2 {  0% {
+opacity:0;
+}
+ 40% {
+opacity:.8;
+}
+ 45% {
+opacity:.3;
+}
+ 50% {
+opacity:.8;
+}
+ 55% {
+opacity:.3;
+}
+ 60% {
+opacity:.8;
+}
+ 100% {
+opacity:0;
+}
+}
+@-o-keyframes animations2 {  0% {
+opacity:0;
+}
+ 40% {
+opacity:.8;
+}
+ 45% {
+opacity:.3;
+}
+ 50% {
+opacity:.8;
+}
+ 55% {
+opacity:.3;
+}
+ 60% {
+opacity:.8;
+}
+ 100% {
+opacity:0;
+}
+}
+@-ms-keyframes animations2 {  0% {
+opacity:0;
+}
+ 40% {
+opacity:.8;
+}
+ 45% {
+opacity:.3;
+}
+ 50% {
+opacity:.8;
+}
+ 55% {
+opacity:.3;
+}
+ 60% {
+opacity:.8;
+}
+ 100% {
+opacity:0;
+}
+}
+@keyframes animations2 {  0% {
+opacity:0;
+}
+ 40% {
+opacity:.8;
+}
+ 45% {
+opacity:.3;
+}
+ 50% {
+opacity:.8;
+}
+ 55% {
+opacity:.3;
+}
+ 60% {
+opacity:.8;
+}
+ 100% {
+opacity:0;
+}
+}

@@ -1,0 +1,15 @@
+/* articleInfo-css */
+
+
+/* 文章目录 */
+
+.articleCatalogue {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#articleCatalogue_content {
+    font-size: 1rem;
+    text-align: left;
+    color: #000;
+}

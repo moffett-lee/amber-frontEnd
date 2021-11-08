@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery实现鼠标移动到图片上显示大图广告代码</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+.advbox{width:990px;margin:0 auto;}
+</style>
+</head>
+<body>
+<div class="advbox"><a target="_blank" href="http://www.lanrenzhijia.com/"><img id="ad_img" alt="" src="images/T14V_QXXViXXXbr4Hs-990-45.png"></a> </div>
+<script type="text/javascript">
+(function(j){
+	j(function(){
+		var img_s_src = "images/T14V_QXXViXXXbr4Hs-990-45.png",
+			img_b_src = "images/T17gDLXl4rXXarV7Th-990-500.png",
+			img_s_h = 45,
+			img_b_h = 500,
+			_ad_img = "#ad_img",
+			I = j(_ad_img),
+			A = I.parents().eq(0),
+			D = I.parents().eq(1),
+			interval = undefined,
+			delay = 3000,
+			interval2 = undefined,
+			delay2 = 500,
+			isZoomin = false,
+			img_s = new Image(),
+			img_b = new Image();
+		img_s.src = img_s_src;
+		img_b.src = img_b_src;
+		
+		var start = function(){
+			interval = window.setTimeout(function(){
+				D.css({
+					overflow: "hidden",
+					position: "relative",
+					height: img_b_h
+				});
+				I.css({
+					position: "absolute",
+					left: 0,
+					top: 0
+				});
+				
+				D.stop(true, true).animate({
+					height: img_s_h
+				});
+				I.stop(true, true).animate({
+					top: -(img_b_h - img_s_h)
+				}, function(){
+					I.attr("src", img_s.src).css("top", 0);
+				});
+				isZoomin = false;
+			}, delay);
+		}
+		
+		var stop = function(){
+			window.clearTimeout(interval);
+			interval = undefined;
+			window.clearTimeout(interval2);
+			interval2 = undefined;
+		}
+		
+		var zoom_in = function(){
+			I.attr("src", img_b.src);
+			D.css("height", img_b_h);
+			isZoomin = true;
+		}
+		
+		D.hover(function(e){
+			e.stopPropagation();
+			e.preventDefault();
+			stop();
+			interval2 = window.setTimeout(zoom_in, delay2);
+		}, function(e){
+			e.stopPropagation();
+			e.preventDefault();
+			stop();
+			delay = 1000;
+			if(isZoomin) start();
+		});
+		
+		//start();
+	});
+})(jQuery);
+</script>
+</body>
+</html>
+<SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

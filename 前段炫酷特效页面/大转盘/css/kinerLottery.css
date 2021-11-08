@@ -1,0 +1,27 @@
+@charset "UTF-8";
+html { font-size: 20px; }
+@media only screen and (min-width:401px) {
+    html { font-size: 25px !important; }
+}
+@media only screen and (min-width:428px) {
+    html { font-size: 26.75px !important; }
+}
+@media only screen and (min-width:481px) {
+    html { font-size: 30px !important; }
+}
+@media only screen and (min-width:569px) {
+    html { font-size: 35px !important; }
+}
+@media only screen and (min-width:641px) {
+    html { font-size: 40px !important; }
+}
+html, body { padding: 0; margin: 0; background: #fffeea; height: 100%; }
+p, li, b, span, div, strong, h1, h2, h3, h4, h5, h6, a, ul { margin: 0; padding: 0; text-decoration: none; list-style: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.box { width: 14rem; height: 14rem; position: relative; margin: 0 auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); }
+.box .outer { width: 100%; height: 100%; position: absolute; z-index: 1; top: 0; left: 0; transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
+.box .outer img { width: 100%; }
+.box .inner { position: relative; width: 5rem; height: 5rem; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 2; background-image: url(../images/arrow.png); background-size: auto 5rem; background-repeat: no-repeat; }
+.box .inner.start:active { -webkit-transform: translate(-50%, -50%) scale(.95); -moz-transform: translate(-50%, -50%) scale(.95); -ms-transform: translate(-50%, -50%) scale(.95); -o-transform: translate(-50%, -50%) scale(.95); transform: translate(-50%, -50%) scale(.95); }
+.box .inner.start { background-position: 0 0; }
+.box .inner.no-start { background-position: -5rem 0; }
+.box .inner.completed { background-position: -10rem 0; }

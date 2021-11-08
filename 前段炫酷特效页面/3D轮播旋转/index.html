@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>js+css3图片切换立体旋转代码 - 站长素材</title>
+
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="htmleaf-container">
+
+	
+	
+	
+
+	<h2>Eight images</h2>
+	<div class="carousel">
+		<figure>
+				<img src="img/1.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/3.jpg" alt="">
+			<img src="img/4.jpg" alt="">
+			<img src="img/5.jpg" alt="">
+			<img src="img/6.jpg" alt="">
+			<img src="img/7.jpg" alt="">
+			<img src="img/8.jpg" alt="">
+		</figure>
+		<nav>
+			<button class="nav prev">Prev</button>
+			<button class="nav next">Next</button>
+		</nav>
+	</div>
+
+	<h2>Eight images, with 20px gap</h2>
+	<div class="carousel" data-gap="20">
+		<figure>
+				<img src="img/1.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/3.jpg" alt="">
+			<img src="img/4.jpg" alt="">
+			<img src="img/5.jpg" alt="">
+			<img src="img/6.jpg" alt="">
+			<img src="img/7.jpg" alt="">
+			<img src="img/8.jpg" alt="">
+		</figure>
+		<nav>
+			<button class="nav prev">Prev</button>
+			<button class="nav next">Next</button>
+		</nav>
+	</div>
+
+	<h2>Eight images, with 80px gap</h2>
+	<div class="carousel" data-gap="80">
+		<figure>
+				<img src="img/1.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/3.jpg" alt="">
+			<img src="img/4.jpg" alt="">
+			<img src="img/5.jpg" alt="">
+			<img src="img/6.jpg" alt="">
+			<img src="img/7.jpg" alt="">
+			<img src="img/8.jpg" alt="">
+		</figure>
+		<nav>
+			<button class="nav prev">Prev</button>
+			<button class="nav next">Next</button>
+		</nav>
+	</div>
+
+	<h2>Hidden backfaces</h2>
+	<div class="carousel" data-gap="20" data-bfc>
+		<figure>
+				<img src="img/1.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/3.jpg" alt="">
+			<img src="img/4.jpg" alt="">
+			<img src="img/5.jpg" alt="">
+			<img src="img/6.jpg" alt="">
+			<img src="img/7.jpg" alt="">
+			<img src="img/8.jpg" alt="">
+		</figure>
+		<nav>
+			<button class="nav prev">Prev</button>
+			<button class="nav next">Next</button>
+		</nav>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+	'use strict';
+
+	window.addEventListener('load', function () {
+		var carousels = document.querySelectorAll('.carousel');
+
+		for (var i = 0; i < carousels.length; i++) {
+			carousel(carousels[i]);
+		}
+	});
+
+	function carousel(root) {
+		var figure = root.querySelector('figure'),
+			nav = root.querySelector('nav'),
+			images = figure.children,
+			n = images.length,
+			gap = root.dataset.gap || 0,
+			bfc = 'bfc' in root.dataset,
+			theta = 2 * Math.PI / n,
+			currImage = 0;
+
+		setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+		window.addEventListener('resize', function () {
+			setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+		});
+
+		setupNavigation();
+
+		function setupCarousel(n, s) {
+			var apothem = s / (2 * Math.tan(Math.PI / n));
+
+			figure.style.transformOrigin = '50% 50% ' + -apothem + 'px';
+
+			for (var i = 0; i < n; i++) {
+				images[i].style.padding = gap + 'px';
+			}for (i = 1; i < n; i++) {
+				images[i].style.transformOrigin = '50% 50% ' + -apothem + 'px';
+				images[i].style.transform = 'rotateY(' + i * theta + 'rad)';
+			}
+			if (bfc) for (i = 0; i < n; i++) {
+				images[i].style.backfaceVisibility = 'hidden';
+			}rotateCarousel(currImage);
+		}
+
+		function setupNavigation() {
+			nav.addEventListener('click', onClick, true);
+
+			function onClick(e) {
+				e.stopPropagation();
+
+				var t = e.target;
+				if (t.tagName.toUpperCase() != 'BUTTON') return;
+
+				if (t.classList.contains('next')) {
+					currImage++;
+				} else {
+					currImage--;
+				}
+
+				rotateCarousel(currImage);
+			}
+		}
+
+		function rotateCarousel(imageIndex) {
+			figure.style.transform = 'rotateY(' + imageIndex * -theta + 'rad)';
+		}
+	}
+</script>
+
+
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery模仿北风网右侧悬浮蓝色在线客服代码</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+.keifu{ position:fixed; top:10%; right:0; width:131px;  _position:absolute; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.bottom,10)||0)-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+ z-index:990;}
+.keifu_tab{ width:160px;}
+.icon_keifu{ width:26px; height:100px; float:left; background:url(http://demo.lanrenzhijia.com/2014/service1027/images/keifu.png) 0 0; position:relative; display:none; cursor:pointer;}
+.keifu_box{ float:left; width:131px;}
+.keifu_tab img{ display:block;}
+.keifu_head{ width:131px; height:41px; background:url(http://demo.lanrenzhijia.com/2014/service1027/images/keifu.png); background-position: 0 -103px; font-size:0; line-height:0; position:relative;}
+.keifu_close:link,.keifu_close:visited{ display:block; width:11px; height:11px; background:url(http://demo.lanrenzhijia.com/2014/service1027/images/keifu.png) -42px 0; position:absolute; top:5px; right:5px;}
+.keifu_close:hover{ background-position:-60px 0;}
+.keifu_con{ border-left:7px solid #029bdb; border-right:7px solid #029bdb; padding-top:15px; background:#fbfbfb;}
+.keifu_con li{height:33px; padding-left:12px;}
+.keifu_con .weixin{ height:96px;}
+.keifu_con .bt{ font-size:16px; height:30px; line-height:30px; text-align:left; padding:0 0 0 20px; color:#012646;}
+.keifu_bot{ width:131px; height:119px; background:url(http://demo.lanrenzhijia.com/2014/service1027/images/keifu.png); background-position:0 -149px; }
+</style>
+</head>
+<body style="height:2000px;">
+<!-- 代码部分begin -->
+<div class="keifu">
+  <div class="keifu_tab">
+    <div class="icon_keifu"></div>
+    <div class="keifu_box">
+      <div class="keifu_head"><a href="javascript:void(0)" class="keifu_close"></a></div>
+      <ul class="keifu_con">
+        <li><a href="http://www.lanrenzhijia.com"><img src="http://demo.lanrenzhijia.com/2014/service1027/images/qq.png"/></a></li>
+        <li><a href="http://www.lanrenzhijia.com"><img src="http://demo.lanrenzhijia.com/2014/service1027/images/qq.png"/></a></li>
+        <li><a href="http://www.lanrenzhijia.com"><img src="http://demo.lanrenzhijia.com/2014/service1027/images/qq.png"/></a></li>
+        <li class="weixin"><img src="http://demo.lanrenzhijia.com/2014/service1027/images/qrcode.jpg" width="96" alt="扫一扫，访问懒人之家" /></li>
+      </ul>
+      <div class="keifu_bot"></div>
+    </div>
+  </div>
+</div>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+$(function(){
+	var KF = $(".keifu");
+	var wkbox = $(".keifu_box");
+	var kf_close = $(".keifu .keifu_close");
+	var icon_keifu = $(".icon_keifu");
+	var kH = wkbox.height();
+	var kW = wkbox.width();
+	var wH = $(window).height();
+	KF.css({height:kH});
+	icon_keifu.css("top",parseInt((kH-100)/2));
+	var KF_top = (wH-kH)/2;
+	if(KF_top<0) KF_top=0;
+	KF.css("top",KF_top);
+	$(kf_close).click(function(){
+		KF.animate({width:"0"},200,function(){
+			wkbox.hide();
+			icon_keifu.show();
+			KF.animate({width:26},300);		
+		});	
+	});
+	$(icon_keifu).click(function(){
+			$(this).hide();
+			wkbox.show();
+			KF.animate({width:kW},200);
+	});
+});
+</script>
+<!-- 代码部分end -->
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

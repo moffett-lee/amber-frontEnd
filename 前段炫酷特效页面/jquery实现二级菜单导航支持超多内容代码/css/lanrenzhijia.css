@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* ------------------------------
+ * CSS Document 
+ * ------------------------------ */
+html {background-color:#EEEEEE; color:#434343; _background-image:url(about:blank); _background-attachment:fixed;}
+body {font-size:9pt; line-height:160%;}
+h1, h2, h3, h4, h5 {margin:0; padding:0;}
+textarea {overflow:auto;}
+img {vertical-align:baseline;}
+ul{list-style:none;margin:0;padding:0}
+ul li{vertical-align:bottom}
+a {outline:none;}
+a:link {color:#434343; text-decoration:none;}
+a:visited {color:#838383; text-decoration:none;}
+a:hover {color:#CC0000; text-decoration:none;}
+a:active {}
+a.keep:link, .keep a:link {color:#434343;}
+a.keep:visited, .keep a:visited {color:#434343;}
+a.keep:hover, .keep a:hover {color:#CC0000;}
+a.keep:active, .keep a:hover {}
+/* miscellaneous */
+.container {position:relative; width:984px; left:50%; margin-left:-494px;}
+#form-search, #btn_s, .rss,
+#wrap-nav, #wrap-nav li, #wrap-nav h3, #wrap-nav h3 a,
+#wrap-subnav, #wrap-subnav .bgl, #wrap-subnav .bgr,
+#wrap-crumb a,
+#wrap-cats h3, #wrap-cats h3 a.depth_2,
+.audio-player,
+.content ul.utilbar, .content ul.utilbar li, .content ul.utilbar li a,
+.hboxbg, .hbox h4, .hbox .more,
+ul.tab-title, ul.tab-panel,
+.bar ul.hits, .bar ul.digg,
+.dashed, .icon5, .icon10, .icon16, .icon20, .sprite
+{background:transparent url("../images/sprite.gif") no-repeat scroll left -9999px; _background:transparent url("../images/sprite.gif") no-repeat scroll left -9999px;}
+/* ------------------------------
+ * wrap-nav 
+ * ------------------------------ */
+#wrap-nav {height:40px; line-height:40px; background-repeat:repeat-x; background-position:0 0; background-color:#CC0000;}
+#wrap-nav .container {z-index:19;}
+#wrap-nav ul.menu {}
+#wrap-nav ul.menu li {position:relative; float:left; padding:0 5px; background-position:0 -40px;}
+#wrap-nav ul.menu li h3 {padding:0 15px 0 0; font-size:1.2em;}
+#wrap-nav ul.menu li h3 a.depth_1 {padding:0 0 0 15px; display:inline-block; color:#FFFFFF;}
+#wrap-nav ul.menu li h3.hover,
+#wrap-nav ul.menu li h3.selected {background-position:right -80px;}
+#wrap-nav ul.menu li h3.hover a.depth_1,
+#wrap-nav ul.menu li h3.selected a.depth_1 {background-position:left -80px; color:#CC0000;}
+#wrap-nav ul.menu li.hover h3 {background-position:right -120px;}
+#wrap-nav ul.menu li.hover h3 a.depth_1 {background-position:left -120px; color:#CC0000;}
+#wrap-nav ul.menu li ul.children {position:absolute; left:2px; top:40px; z-index:19; display:none; width:393px; padding:6px 7px 5px 6px; border:3px solid #990000; border-top:0px; background:#FFFFFF;}
+#wrap-nav ul.menu li ul.children li {width:393px; padding:0 0 1px 0; background:none;}
+#wrap-nav ul.menu li ul.children li.nosub {width:130px; overflow:hidden;}
+#wrap-nav ul.menu li ul.children li h3 {}
+#wrap-nav ul.menu li ul.children li h3 a.depth_2 {width:120px; line-height:25px; display:block; font-weight:normal; font-size:9pt; color:#900;}
+#wrap-nav ul.menu li ul.children li h3 a.depth_2 span.icon10 {margin:10px 3px 0 5px; background-position:-60px -380px;}
+#wrap-nav ul.menu li ul.children li h3.selected {background:#FFEFEF;}
+#wrap-nav ul.menu li ul.children li.hover {z-index:20;}
+#wrap-nav ul.menu li ul.children li.hover h3 a.depth_2 {background:#FFCFCF; font-weight:bold;}
+#wrap-nav ul.menu li ul.children li.hover ul {background:#FFEFEF; border-color:#FFBFBF; height:auto; z-index:20;}
+#wrap-nav ul.menu li ul.children li.hover ul li a.depth_3 {color:#333;}
+#wrap-nav ul.menu li ul.children li.hover ul li a.depth_3:hover {color:#900;}
+#wrap-nav ul.menu li ul.children ul {position:absolute; top:0; left:120px; padding:0 0 0 10px; width:263px; height:25px; overflow:hidden; background:#F4F8F9; border-left:2px solid #D8E2EC;}
+#wrap-nav ul.menu li ul.children ul li {width:auto; padding:0; float:left;}
+#wrap-nav ul.menu li ul.children ul li a.depth_3 {margin:0 15px 0 0; line-height:25px; display:block; color:#666; white-space:nowrap;}
+#wrap-nav ul.menu li ul.children ul li a.depth_3:hover {text-decoration:underline;}
+#wrap-nav ul.menu li ul.children ul li a.selected {background:none; color:#900;}
+.coda-slider, .coda-slider .panel {width:200px;}
+/* Arrow styling */
+.coda-nav-left a, .coda-nav-right a {}
+/* Tabbed nav */
+.coda-nav ul {clear:both; display:block; margin:auto; overflow:hidden;}
+.coda-nav ul li {float:left;}
+.coda-nav ul li a {}
+.coda-nav ul li a.current {}
+/* Miscellaneous 代码整理：懒人之家 */
+.coda-slider {float:left; overflow:hidden; position:relative;}
+.coda-slider .panel {display:block; float:left;}
+.coda-slider .panel-container {position:relative;}
+.coda-nav-left, .coda-nav-right {float:left;}
+.coda-nav a, .coda-nav-left a, .coda-nav-right a {background-image:url("../images/sprite.gif"); _background-image:url("../images/sprite.gif"); background-repeat:no-repeat; background-position:left -9999px;}

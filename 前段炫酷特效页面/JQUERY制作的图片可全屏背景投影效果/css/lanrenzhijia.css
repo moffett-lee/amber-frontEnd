@@ -1,0 +1,121 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	background:#212121;
+	overflow:hidden;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#fff;
+	font-size:10px;
+}
+#outer_container{
+	position:fixed;
+	bottom:-160px;	/*-160px to hide*/
+	margin:0px 0px 30px 0px;
+	height:130px;
+	padding:0;
+	-webkit-box-reflect:
+		below 5px -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(transparent),
+			color-stop(0.6, transparent),
+			to(rgb(18, 18, 18))
+		);
+}
+#thumbScroller{
+	position:relative;
+	overflow:hidden;
+}
+#thumbScroller .container{
+	position:relative;
+	left:0;
+}
+#thumbScroller .content{
+	float:left;
+}
+#thumbScroller .content div{
+	margin:2px;
+	height:100%;
+}
+#thumbScroller img,
+img.clone{
+	border:5px solid #fff;
+	height:120px;
+}
+#thumbScroller a{
+	padding:2px;
+	outline:none;
+}
+.fp_overlay{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:transparent url(../images/icons/pattern2.png) repeat-x bottom left;
+}
+.fp_loading{
+	display:none;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin:-35px 0px 0px -35px;
+	background:#000 url(../images/icons/loader.gif) no-repeat center center;
+	width:70px;
+	height:70px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	z-index:999;
+	opacity:0.7;
+}
+.fp_next,
+.fp_prev{
+	width:50px;
+	height:50px;
+	position:fixed;
+	top:50%;
+	margin-top:-15px;
+	cursor:pointer;
+	opacity:0.5;
+}
+.fp_next:hover,
+.fp_prev:hover{
+	opacity:0.9;
+}
+.fp_next{
+	background:#000 url(../images/icons/next.png) no-repeat center center;
+	right:-50px;
+}
+.fp_prev{
+	background:#000 url(../images/icons/prev.png) no-repeat center center;
+	left:-50px;
+}
+.fp_thumbtoggle{
+	height:50px;
+	background:#000;
+	width:200px;
+	text-align:center;
+	letter-spacing:1px;
+	text-shadow:1px 1px 1px #000;
+	position:fixed;
+	left:50%;
+	margin-left:-100px;
+	bottom:-50px;
+	line-height:50px;
+	cursor:pointer;
+	opacity:0.8;
+}
+.fp_thumbtoggle:hover{
+	opacity:1.0;
+}
+img.fp_preview{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+}

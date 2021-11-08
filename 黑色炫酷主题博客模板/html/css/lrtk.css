@@ -1,0 +1,7 @@
+*html { background-image: url(about:blank); background-attachment: fixed; }/*解决IE6下滚动抖动的问题*/
+#tbox { width: 54px; float: right; position: fixed; right: 50px; bottom: 15px; _position: absolute; _bottom: auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));
+_margin-bottom: 15px; }/*解决IE6下不兼容 position:fixed 的问题*/
+#togbook, #gotop { width: 54px; height: 56px; display: block; background:url(../images/icons.png) no-repeat  #111 ;box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 6px;}
+#togbook { margin: 5px 0 ;background-position:10px -407px;}
+#gotop {background-position:12px -365px;}
+#togbook:hover, #gotop:hover { opacity: 0.5 }

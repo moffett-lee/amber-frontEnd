@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>纯js实现不影响网页点击效果的网页下雪插件</title>
+	<style>
+	*{margin:0;padding:0;list-style:none;}
+	html,body{height:100%;}
+	body{background: url(images/bg.jpg) no-repeat center center;background-size:cover;}
+	/* 以下是CSS3样式，适合高版本浏览器 */
+	.Snowflake{animation:linear spin infinite 20s;-webkit-animation:linear spin infinite 20s;-moz-animation:linear spin infinite 20s;pointer-events:none;}
+	@keyframes spin{
+		0% {transform:rotate(0deg);}
+		100% {transform:rotate(359deg);}
+	}
+	@-webkit-keyframes spin{
+		0% {-webkit-transform:rotate(0deg);}
+		100% {-webkit-transform:rotate(359deg);}
+	}
+	@-moz-keyframes spin{
+		0% {-moz-transform:rotate(0deg);}
+		100% {-moz-transform:rotate(359deg);}
+	}
+	</style>
+</head>
+<body>
+	<script src="js/snowflake.js"></script>
+	<script>
+		createSnow('', 200);
+	</script>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

@@ -1,0 +1,63 @@
+ @charset "gb2312";
+.banner { width: 100%; margin: 30px 0; overflow: hidden }
+.fader { position: relative; padding-top: 30%; font-family: "futura", arial; overflow: hidden; }
+.fader .slide { position: absolute; width: 100%; height: 100%; top: 0; z-index: 1; opacity: 0; }
+.fader img.slide { height: auto; }
+.fader .prev, .fader .next { position: absolute; height: 80px; line-height: 55px; width: 50px; font-size: 100px; text-align: center; color: #fff; top: 50%; left: 0; z-index: 4; margin-top: -25px; cursor: pointer; opacity: .3; transition: all 150ms; }
+.fader .prev:hover, .fader .next:hover { opacity: 1; }
+.fader .next { left: auto; right: 0; }
+.fader .pager_list { position: absolute; width: 100%; height: 40px; padding: 0; line-height: 40px; bottom: 0; text-align: center; z-index: 4; }
+.fader .pager_list li { display: inline-block; width: 15px; height: 15px; margin: 0 7px; background: #fff; opacity: .3; text-indent: -9999px; border-radius: 999px; cursor: pointer; transition: all 150ms; }
+.fader .pager_list li:hover, .fader .pager_list li.active { opacity: 1; }
+/* blog */
+.blog { margin-bottom: 30px; overflow: hidden; padding: 10px 0; background: #ececec; }
+.blog figure { background: #ececec; border: #f3f3f3 10px solid; width: 22%; height: 430px; float: left; margin: 0 6px 0; overflow: hidden }
+.blog figure img { display: block; margin: auto; height: 256px; overflow: hidden; }
+.blog figure p { font-size: 14px; text-shadow: #fff 1px 1px 0px; line-height: 26px; text-align: center; font-weight: bold }
+.blog figure p a { color: #226039; }
+.blog figure figcaption { padding: 10px; line-height: 22px; color: #666; }
+.blog figure ul { background: url(../images/yu.png) no-repeat center; overflow: hidden; height: 256px; margin-bottom: 20px }
+.blog figure ul span { opacity: 0 }
+.blog figure ul:hover span { opacity: 1 }
+.blog figure ul a { position: relative; display: block }
+.blog figure ul span { position: absolute; left: 0px; top: 0px; background: rgba(0,0,0,0.5) url(../images/yu.png) no-repeat center 10px; color: #FFF; display: block; width: 100%; height: 100%; line-height: 256px; text-align: center; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; -ms-transition: all 0.5s; text-decoration: underline }
+/*最新文章*/
+.newblogs { background: #fff; overflow: hidden; width: 68%; float: left; }
+h3.blogtitle { line-height: 30px; height: 30px; margin: 10px 0; }
+.blogtitle span { background: #333; padding: 2px 5px; font-size: 14px; color: #FFF; border-radius: 2px; position: relative; margin-right: 20px }
+.blogtitle span a { color: #FFF }
+.blogtitle span:after { content: ""; width: 0px; height: 0px; border-top-width: 6px; border-top-style: solid; border-top-color: transparent; border-left-width: 6px; border-left-style: solid; border-left-color: #333; border-bottom-width: 6px; border-bottom-style: solid; border-bottom-color: transparent; margin: 0px; padding: 0px; position: absolute; right: -6px; top: 6px } /*三角形*/
+.blogpic { overflow: hidden; width: 30%; height: 100px; display: block; float: left; margin-right: 20px; background: #333; }
+.newblogs ul { padding: 10px; overflow: hidden }
+.newblogs li { border-bottom: #ccc 1px solid; margin-bottom: 10px; overflow: hidden; }
+.autor { width: 100%; overflow: hidden; clear: both; margin: 20px 0 0 0; display: inline-block; color: #838383; font-size: 12px }
+.autor span { margin: 0 10px 0 0; padding-left: 20px }
+.autor span a { color: #096; }
+.autor span a:hover { text-decoration: underline }
+.lm { background: url(../images/newsbg01.png) no-repeat left center }
+.dtime { background: url(../images/posttime.gif) no-repeat left center }
+.viewnum { background: url(../images/newsbg04.png) no-repeat left center }
+.pingl { background: url(../images/newsbg03.png) no-repeat left center }
+.blogpic img { width: 100%; }
+.bloginfo p { color: #888; line-height: 24px; }
+.more { font-size: 14px; }
+.line { width: 0px; height: 2px; background: #333; -moz-transition: all 5s ease; -webkit-transition: all 5s ease; transition: all 5s ease; }/* line 过渡*/
+.newblogs li:hover .line { width: 100%; }
+.rbox { width: 30%; overflow: hidden; float: right }
+.paihang { background: #FFF; overflow: hidden; margin-bottom: 20px }
+.paihang ul { padding: 10px; }
+.paihang ul li { border-bottom: solid 1px #EAEAEA; font-size: 14px; margin: 0 0 10px 0; padding: 0 0 10px 0; overflow:hidden }
+.paihang ul li b { height: 30px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display: block; }
+.paihang ul li p { line-height: 24px; color: #888 }
+.paihang ul li a:hover { color: #000; }
+.paihang ul li:hover p { color: #000; }
+.paihang ul li:hover b a { color: #000; }
+.paihang li i { width: 100px; height: 90px; overflow: hidden; display: block; border: #efefef 1px solid; float: left; margin-right: 10px }
+.paihang li img { height: 100%; margin: auto; -moz-transition: all .5s ease; -webkit-transition: all .5s ease; transition: all .5s ease; }
+.paihang ul li:hover i img { transform: scale(1.1) }
+/*links*/
+.links { width: 100%; background: #FFF; overflow: hidden; }
+.links ul { padding: 20px 50px; }
+.links ul li { line-height: 24px; border: 1px solid #ccc; margin: 0 0 10px 0; padding: 5px; text-align: center; border-radius: 5px; }
+.links ul li:hover { }
+.links ul li:hover a { color: #096 }

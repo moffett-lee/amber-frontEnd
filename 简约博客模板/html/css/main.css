@@ -1,0 +1,17 @@
+@charset "gb2312";
+/* about */
+.aboutcon{background:url(../images/aboutphoto.jpg) no-repeat bottom right; color:#696969}
+h1.t_nav { border-bottom: #F1F1F1 1px solid; font-size: 12px; font-weight: normal; line-height: 40px; height: 40px; }
+h1.t_nav a{width: 100px; display: block; text-align: center ; color: #fff; float:left}
+h1.t_nav span{float:right; color:#999}
+.n1 { background: #5EA51B; }
+.n2{ background: #8BBF5D; }
+.about{ width:740px;overflow: hidden; background: url(../images/r_line.jpg) repeat-y right; line-height:22px; }
+.about h2{ font-size:22px;margin-bottom:20px}
+.about p{ margin-bottom:20px}
+.about_c,.about{margin:20px 0}
+.about ul{ width:710px}
+.about_c{ padding:10px 0 0 10px; color:#999; line-height:26px; }
+.about_c img{ margin:5px 0}
+.about_c span{ color:#19A566}
+a.blog_link{ color:#1CA368; margin:0 20px}

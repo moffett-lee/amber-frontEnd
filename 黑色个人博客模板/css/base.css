@@ -1,0 +1,91 @@
+@charset "gb2312";
+/* 共用css */
+* { margin: 0; padding: 0 }
+body { font: 14px "微软雅黑", Arial, Helvetica, sans-serif; background: #f1f1f1; background-attachment: fixed; color: #555 }
+img { border: 0; display: block }
+ul, li { list-style: none; }
+/*默认链接颜色 */
+a { text-decoration: none; color: #555 }
+.clear { clear: both; }
+.blank { height: 8px; overflow: hidden; width: 100%; margin: auto; clear: both }
+.blank80 { height: 100px; overflow: hidden; width: 100%; margin: auto; clear: both }
+.f_l { float: left }
+.f_r { float: right }
+header { width: 100%; overflow: hidden; background: #333; position: fixed; z-index: 9999; }
+.toplogo { width: 1200px; margin: auto; position: relative }
+.logo { position: absolute; top: 31px; left: 1px; }
+/* nav */
+.topnav { width: 100%; overflow: hidden; }  /*导航颜色*/
+nav { width: 1200px; margin: auto; color: #999; line-height: 32px; background: url(../images/logo.png) no-repeat left 10px top 13px }
+nav ul { text-align: right; height: 46px; line-height: 46px; }
+nav ul li { display: inline; font-size: 16px; padding: 0px 20px; }
+nav ul li a { color: #fff; }
+/*phone  nav */
+#mnav { display: none; width: 100%; }
+#mnav h2 { text-align: right; color: #fff; font-size: 18px; height: 52px; line-height: 52px; padding-left: 10px; width: 100% }
+#mnav h2.open { text-align: right; background: rgba(1,1,1,0.8); width: 100%; }
+#mnav ul { display: none; background: rgba(1,1,1,0.8); width: 100%; padding-bottom: 40px }
+#mnav li { height: 40px; line-height: 40px; vertical-align: top; font-size: 16px; display: block; overflow: hidden; text-align: center }
+#mnav li a { color: #fff }
+/* 默认菜单栏 */
+#mnav h2 .navicon { margin-right: 15px; }
+.navicon { display: inline-block; position: relative; width: 30px; height: 5px; background-color: #FFFFFF; }
+.navicon:before, .navicon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #FFFFFF; -webkit-transition-property: margin, -webkit-transform; transition-property: margin, -webkit-transform; transition-property: margin, transform; transition-property: margin, transform, -webkit-transform; -webkit-transition-duration: 300ms; transition-duration: 300ms; }
+.navicon:before { margin-top: -10px; }
+.navicon:after { margin-top: 10px; }
+/* 展开后导航栏目 */
+#mnav h2.open .navicon { background: rgba(1,1,1,0.8) }/* 使用背景色隐藏中间的红线 */
+#mnav h2.open .navicon:before { margin-top: 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+#mnav h2.open .navicon:after { margin-top: 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+#mnav h2.open .navicon:before, #mnav h2.open .navicon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #FFFFFF; -webkit-transition-property: margin, -webkit-transform; transition-property: margin, -webkit-transform; transition-property: margin, transform; transition-property: margin, transform, -webkit-transform; -webkit-transition-duration: 300ms; transition-duration: 300ms; }
+article { width: 1100px; padding: 50px; background: rgba(255,255,255,0.5); margin: auto; overflow: hidden; }
+footer { width: 100%; background: #333; color: #a5a4a4; text-align: center; padding: 20px 0; }
+footer a { color: #a5a4a4 }
+/*列表页*/
+.litle { padding: 30px 0 10px 0; font-size: 18px; border-bottom: #fff 1px solid; overflow: hidden; color: #333; text-shadow: #fff 1px 1px 2px; }
+.litle span { float: right; font-weight: normal; font-size: 16px; animation: animations2 5s; -moz-animation: animations2 5s;	/* Firefox */ -webkit-animation: animations2 5s;	/* Safari 和 Chrome */ -o-animation: animations2 5s; }
+@-webkit-keyframes animations2 { 0% {
+opacity:0;
+}
+ 40% {
+opacity:.8;
+}
+ 45% {
+opacity:.3;
+}
+ 50% {
+opacity:.8;
+}
+ 55% {
+opacity:.3;
+}
+ 60% {
+opacity:.8;
+}
+ 100% {
+opacity:1;
+}
+}
+.navtab { border-top: #dedede 1px solid; padding: 10px 0; overflow: hidden; margin-bottom: 20px }
+.navlist li { line-height: 36px; margin: 10px 20px 0 0; display: block; float: left; padding: 0 10px; background: #fff; transition: 800ms ease all; outline: none; position: relative; }
+.navlist li a { color: #333 }
+#pagecurrent { border-top: #333 1px solid; border-bottom: #333 1px solid }
+.navlist li:before, .navlist li:after { content: ''; position: absolute; top: 0; right: 0; height: 2px; width: 0; background: #333; transition: 400ms ease all; }
+.navlist li:after { right: inherit; top: inherit; left: 0; bottom: 0; }
+.navlist li:hover:before, .navlist li:hover:after { width: 100%; transition: 800ms ease all; }
+/*search*/
+.search { width: 270px; float: right; overflow: hidden; margin-top: 10px; }
+.input_text { border: 1px solid #ccc; width: 198px; height: 26px; line-height: 26px; background-color: #f2f2f2; float: left; padding-left: 10px }
+.input_submit { background-color: #333; color: #FFF; float: left; width: 60px; border: none; cursor: pointer; height: 28px; line-height: 28px; border-radius: 0 5px 5px 0 }
+.pagelist { text-align: center; color: #666; width: 100%; clear: both; margin: 20px 0; padding-top: 20px }
+.pagelist a { color: #666; margin: 0 2px; border: 1px solid #000; padding: 5px 10px; }
+.pagelist a:hover { color: #1f7d6a; }
+.pagelist > b { border: 1px solid #000; padding: 5px 10px; }
+/*wx*/
+.weixin { width: 100%; background: #FFF; overflow: hidden; margin: 20px 0 }
+.weixin img { width: 100%; height: auto }
+/*h2*/
+.hometitle { padding: 0 10px; line-height: 40px; height: 40px; font-size: 18px; border-bottom: 1px solid #e5e5e5; border-left: 5px solid #333; color: #333; }
+.hometitle span { float: right; font-weight: normal; font-size: 14px; height: 42px; overflow: hidden; text-align: right }
+.hometitle span a { display: block; float: right; position: relative; overflow: hidden; margin-right: 20px }
+.hometitle span a:after { content: ''; display: block; width: 1px; height: 20px; border-radius: 10px; background: #000; -webkit-transform: rotate(45deg); transform: rotate(45deg); position: absolute; bottom: -10px }
